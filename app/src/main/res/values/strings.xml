@@ -5,10 +5,12 @@
     <string name="phone_number">P. number ex: +33612345678</string>
     <string name="save">save</string>
     <string name="valid_phone_number">Please provide a valid phone number</string>
+    <string name="error_send_sms">Error while sending SMS</string>
 
 
 
     <string name="shared_prefs">shader_prefs</string>
+    <string name="key_user_id">user_id</string>
     <string name="key_phone">phone_number</string>
     <string name="key_token">api_token</string>
     <string name="key_refresh_token">refresh_token</string>

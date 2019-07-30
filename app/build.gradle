@@ -16,6 +16,17 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
+
+    signingConfigs {
+        release {
+            storeFile file('../keystore/shader_release.jks')
+            storePassword "Bc3440e66"
+            keyAlias "shader"
+            keyPassword "Bc3440e66"
+            v2SigningEnabled true
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +39,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1")
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
