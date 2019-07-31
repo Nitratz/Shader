@@ -18,7 +18,7 @@ class ProfileAdapter(private val mContext: Context, private val mProfiles: List<
         val layout = inflater.inflate(R.layout.item_profile_viewpager, collection, false) as ViewGroup
         val viewPager = layout.findViewById<ViewPager>(R.id.viewPager)
 
-        val photosAdapter = PhotoPagerAdapter(mContext, profile.photos)
+        val photosAdapter = PhotosAdapter(mContext, profile.photos)
         viewPager.adapter = photosAdapter
 
         collection.addView(layout)

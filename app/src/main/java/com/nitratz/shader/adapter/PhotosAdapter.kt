@@ -12,7 +12,7 @@ import com.nitratz.shader.R
 import com.nitratz.shader.RestClient
 
 
-class PhotoPagerAdapter(private val mContext: Context, private val mPhotos: List<Photo>) : PagerAdapter() {
+class PhotosAdapter(private val mContext: Context, private val mPhotos: List<Photo>) : PagerAdapter() {
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val inflater = LayoutInflater.from(mContext)
